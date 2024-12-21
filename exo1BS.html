@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Mon premier projet boostrap</title>
+    <style>
+        .header{
+            background-color: rgb(2,1, 61);
+        }
+        .main-page{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">TP Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Se connecter</a>
+                </li>
+                <li class="nav-item  ms-5">
+                    <a href="#" class="btn btn-success" type="submit" value="Submit">S'inscrire</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="header text-center p-5 bg-dark text-light">
+        <div class="container">
+            <span>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, esse vero? Laudantium aut reiciendis suscipit?
+            </span>
+            <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal"  data-bs-target="#exampleModal">Souscrire</button>
+             <!--la classe  Modal et tooltip -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="right" title="Fermer le popup"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam sint architecto aut consequuntur beatae illum rerum minus. Libero vel consequatur asperiores sequi facere qui soluta laboriosam officiis quisquam aliquid.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+  
+ 
+      </section>
+
+      <section class="main-page py-5">
+        <div class="container ">
+            <div class="row h-100 justify-content-center align-items-center ">
+                <div class="col-lg-6">
+                    <img src="IMG/téléchargement.jpeg"  class="img-fluid" >
+                </div>
+                <div class="col-lg-6 ">
+                    <h1 class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero dicta magnam culpa praesentium porro eveniet quaerat provident, necessitatibus pariatur suscipit minus qui, expedita incidunt voluptatem neque sed ea veritatis!Lorem lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <!--la classe input group-->
+                    <form class="p-5">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Adresse email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="input-group-text btn btn-primary" id="basic-addon2">S'inscrire</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+        <!--la classe tooltip: on colle ce petit bout de code JS pourque le tooltip fonctionne-->
+      <script>
+      
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    
+      </script>
+
+</body>
+</html>
